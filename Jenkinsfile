@@ -6,8 +6,8 @@ pipeline {
                 checkout([$class: 'GitSCM',
                           branches: [[name: '*/main']],
                           userRemoteConfigs: [[url: 'https://github.com/rudraaKhatrii/PES1UG22CS487_JENKINS.git']]])
-            } // <- This was missing!  VERY IMPORTANT.
-        } // <- and this one
+            // <- This was missing!  VERY IMPORTANT.
+         // <- and this one
 
         stage('Build') {
             steps {
